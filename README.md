@@ -23,7 +23,7 @@ Une application web moderne de gestion de biens immobiliers, développée avec R
 
 ---
 
-## � Aperçu de l'application
+## 📸 Aperçu de l'application
 
 ### Page d'accueil - Liste des biens immobiliers
 ![Liste des biens](./screenshots/screenshot1.png)
@@ -39,7 +39,7 @@ Une application web moderne de gestion de biens immobiliers, développée avec R
 
 ---
 
-## �🚀 Comment lancer le projet
+## 🚀 Comment lancer le projet
 
 ### Prérequis
 
