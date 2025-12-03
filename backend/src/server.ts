@@ -1,9 +1,12 @@
-// Importer le module Express
 import express, { Request, Response } from 'express';
+import cors from 'cors';
 import itemRoutes from './routes/item.routes';
 
 const app = express();
 const port = 3000;
+
+// Activer CORS pour toutes les origines
+app.use(cors());
 
 // Middleware pour parser le JSON
 app.use(express.json());

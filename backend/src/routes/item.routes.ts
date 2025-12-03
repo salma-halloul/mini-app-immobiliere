@@ -54,7 +54,7 @@ router.put("/items/:id", (req, res) => {
     const updated = ItemService.update(params.id, bodyResult.data);
 
     if (updated) {
-        res.send("Item updated successfully");
+        res.json(updated);
     } else {
         res.status(404).send("Item not found");
     }
