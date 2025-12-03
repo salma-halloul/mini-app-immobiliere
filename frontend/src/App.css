@@ -278,37 +278,6 @@
   box-shadow: var(--shadow-md);
 }
 
-.delete-btn-overlay {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: rgba(239, 68, 68, 0.95);
-  border: none;
-  padding: 0.5rem 0.625rem;
-  border-radius: var(--radius-sm);
-  font-size: 1.125rem;
-  cursor: pointer;
-  transition: var(--transition);
-  box-shadow: var(--shadow-md);
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.item-card:hover .delete-btn-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.delete-btn-overlay:hover {
-  background: rgba(220, 38, 38, 1);
-  transform: scale(1.1);
-  box-shadow: var(--shadow-lg);
-}
-
-.delete-btn-overlay:active {
-  transform: scale(0.95);
-}
-
 .item-content {
   padding: 1.25rem;
 }
@@ -353,11 +322,21 @@
 
 .item-actions {
   display: flex;
-  gap: 0.75rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.item-actions .btn {
+.item-actions-top {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.item-actions-top .btn {
   flex: 1;
+}
+
+.btn-full {
+  width: 100%;
 }
 
 /* Item Detail Styles */

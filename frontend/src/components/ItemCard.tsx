@@ -15,18 +15,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, onView, onEdit, onDelete }) =
       <div className="item-badge">
         {item.surface} m²
       </div>
-      <button 
-        className="delete-btn-overlay"
-        onClick={(e) => {
-          e.stopPropagation();
-          if (window.confirm(`Êtes-vous sûr de vouloir supprimer "${item.title}" ?`)) {
-            onDelete(item.id);
-          }
-        }}
-        title="Supprimer ce bien"
-      >
-        🗑️
-      </button>
     </div>
     <div className="item-content">
       <h3 className="item-title">{item.title}</h3>
@@ -44,11 +32,25 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, onView, onEdit, onDelete }) =
         {item.price.toLocaleString('fr-FR')} €
       </div>
       <div className="item-actions">
-        <button className="btn btn-primary btn-sm" onClick={() => onView(item.id)}>
+        <div className="item-actions-top">
+          <button className="btn btn-secondary btn-sm" onClick={() => onEdit(item.id)}>
+            ✏️ Modifier
+          </button>
+          <button 
+            className="btn btn-danger btn-sm"
+            onClick={(e) => {
+              e.stopPropagation();
+              if (window.confirm(`Êtes-vous sûr de vouloir supprimer "${item.title}" ?`)) {
+                onDelete(item.id);
+              }
+            }}
+            title="Supprimer ce bien"
+          >
+            🗑️ Supprimer
+          </button>
+        </div>
+        <button className="btn btn-primary btn-sm btn-full" onClick={() => onView(item.id)}>
           👁️ Voir détails
-        </button>
-        <button className="btn btn-secondary btn-sm" onClick={() => onEdit(item.id)}>
-          ✏️ Modifier
         </button>
       </div>
     </div>
