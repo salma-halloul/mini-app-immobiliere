@@ -23,7 +23,23 @@ Une application web moderne de gestion de biens immobiliers, développée avec R
 
 ---
 
-## 🚀 Comment lancer le projet
+## � Aperçu de l'application
+
+### Page d'accueil - Liste des biens immobiliers
+![Liste des biens](./screenshots/screenshot1.png)
+*Vue d'ensemble de tous les biens disponibles avec leurs informations principales*
+
+### Détails d'un bien
+![Détail d'un bien](./screenshots/screenshot2.png)
+*Page de détail affichant toutes les informations d'un bien spécifique*
+
+### Formulaire d'ajout/modification
+![Formulaire](./screenshots/screenshot3.png)
+*Interface pour créer ou modifier un bien immobilier*
+
+---
+
+## �🚀 Comment lancer le projet
 
 ### Prérequis
 
